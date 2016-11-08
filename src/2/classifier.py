@@ -62,7 +62,7 @@ y = np.array([x[-1] for x in data]).astype(np.float)
 N, M = X.shape
 
 # standardize
-# X = (X - X.mean()) / (X.max() - X.min())
+X = (X - X.mean()) / (X.max() - X.min())
 
 
 def top_features(n, weights):
