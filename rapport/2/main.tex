@@ -7,6 +7,8 @@
 
 \documentclass[11pt, paper=a4]{article}
 \usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.8]{geometry}
 \usepackage{amssymb,amsfonts,amsmath,latexsym,amsthm, mathtools} %mathtext,
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -14,13 +16,11 @@
 \usepackage{listings}
 \usepackage{chngpage}
 \usepackage{cprotect}
-\usepackage[font=footnotesize, labelsep=period]{caption}
 \usepackage{cite}
-\usepackage[scale=0.8]{geometry}
-\usepackage[pdftex,unicode,colorlinks, citecolor=blue,
-filecolor=black, linkcolor=blue, urlcolor=blue]{hyperref}
-\usepackage[figure,table]{hypcap}
+\usepackage{hyperref}
 \usepackage{setspace}
+\usepackage{parskip}
+
 
 \graphicspath{{images/}}
 \onehalfspacing{}
@@ -59,6 +59,7 @@ filecolor=black, linkcolor=blue, urlcolor=blue]{hyperref}
   %% solve both a relevant classification and regression problem for your
   %% data.
 \end{abstract}
+
 
 %%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%
 \section{Regression}
@@ -119,8 +120,6 @@ word 3d are spam.
   \caption{\label{fig:modelcheck} Green is spam and blue is not.}
 \end{figure}
 
-
-\newpage
 To figure out what features to use with LR we do forward selection
 with a 10-fold cross-validation. Intially this would not run as the
 initial loss with zero features had a lower error than any of the
@@ -205,7 +204,7 @@ with respectively 1 or 3 hidden units.
 \begin{figure}[h]
   \centering
   \includegraphics[width = 0.5\textwidth]{../../src/img/ann_regression_hid_units.pdf}
-  \caption{Text.}
+  \caption{Hidden units and error}
   \label{fig:annhid}
 \end{figure}
 
@@ -231,15 +230,51 @@ lower the running time of the network.
     \item Test error:     0.16908
     \end{itemize}
   \end{minipage} \vfill
-  \label{fig:compare}
+  \caption{\label{fig:compare} Comparison between ANN and FLR}
 \end{figure}
+
 
 \clearpage
 \section{Classification}
 
 \subsection{Problem}
 We have chosen to solve the classification using Decision Trees,
-K-Nearest Neighbors and Naive Bayes, all using K-Fold cross
-validation.
+K-Nearest Neighbors and Naive Bayes, all using K-Fold cross-validation.
+
+\subsection{Application}
+From the three mentioned classification methods we get the following
+error rates, using K-Fold cross-validation with $K=10$:
+\begin{description}
+  \item[Decision Tree] 7.54\%
+  \item[Naive Bayes] 20.80\%
+  \item[K-Nearest Neighbors] 20.54\%
+\end{description}
+
+In table~\ref{tbl:dt-feat} and~\ref{tbl:dt-nb}, we have ha comparison
+of the five top features with the classification method producing the
+lowest and highest error rate, respectively.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline Attribute & {\tt \$} & {\tt remove} & {\tt !} & {\tt hp} & {\tt captial\_run\_length\_average} \\
+    \hline Coefficient & 0.254 & 0.0131 & 0.108 & 0.069 & 0.063 \\
+    \hline
+  \end{tabular}
+  \caption{\label{tbl:dt-feat} Top five features with Decision Tree}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c|c|c}
+    \hline Attribute & {\tt capital\_run\_length\_total} & {\tt *\_longest} & {\tt *\_average} & {\tt you} & {\tt your} \\
+    \hline Coefficient & -0.237 & -1.734 & -4.132 & -5.550 & -6.043 \\
+    \hline
+  \end{tabular}
+  \caption{\label{tbl:dt-nb} Top five features with Naive Bayes}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%
+\clearpage
 
 \end{document}
