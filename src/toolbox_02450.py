@@ -82,26 +82,21 @@ def feature_selector_lr(X,y,cvf=10,features_record=None,loss_record=None):
     # first iteration error corresponds to no-feature estimator
     if loss_record==None:
         loss_record = np.array([np.square(y-y.mean()).sum()/y.shape[0]])
-
-    print(loss_record)
     if features_record==None:
         features_record = np.zeros((X.shape[1],1))
 
     # Add one feature at a time to find the most significant one.
     # Include only features not added before.
-
     selected_features = features_record[:,-1].nonzero()[0]
-    #print(selected_features)
     min_loss = loss_record[-1]
     print(min_loss)
     best_feature = False
     for feature in range(0,X.shape[1]):
         if np.where(selected_features==feature)[0].size==0:
             trial_selected = np.concatenate((selected_features,np.array([feature])),0).astype(int)
-            print(trial_selected)
             # validate selected features with linear regression and cross-validation:
             trial_loss = glm_validate(X[:,trial_selected],y,cvf)
-            print(min_loss-trial_loss)
+            print(trial_loss)
             if trial_loss<min_loss:
                 min_loss = trial_loss
                 best_feature = feature
