@@ -117,7 +117,7 @@ $loss\_record=[0.27]$.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width = 0.5\textwidth]{../../src/img/best_forward_selection.pdf}
+  \includegraphics[width = 0.4\textwidth]{../../src/img/best_forward_selection.pdf}
   \caption{Forward selection form 12 features}
   \label{fig:gam}
 \end{figure}
@@ -127,7 +127,7 @@ features.  If we look at the error rates that are
 computed:
 
 \begin{figure}[h]
-  \begin{minipage}{0.5\textwidth}
+  \begin{minipage}{0.4\textwidth}
     \paragraph{Linear regression without feature selection:}
     \begin{itemize}
     \item Training error: 0.16731688100187755
@@ -136,7 +136,7 @@ computed:
     \item $R^2$ test:     0.2907848014802547
     \end{itemize}
   \end{minipage} \hfill
-  \begin{minipage}{0.5\textwidth}
+  \begin{minipage}{0.4\textwidth}
     \paragraph{Linear regression without feature selection:}
     \begin{itemize}
     \item Training error: 0.16731688100187755
@@ -169,26 +169,50 @@ Below(figure3) the residual error for the different fearures can
 be seen. From these we can conclued that something causes something
 but they do not show any distinct patterns.
 
-
-
 \begin{figure}[h]
   \centering
   \includegraphics[width = 0.5\textwidth]{../../src/img/residual_error.pdf}
   \caption{Text.}
   \label{fig:gam}
 \end{figure}
+\subsection{Artificial Neural Network}
+We implement an ANN model to try to solve the regression problem. Spam
+is a binary variable as the mails can either be spam or not. The ANN
+is implemented with $k=5$ cross-validation folds and $1-4$ hidden
+units. Below we have errorrates for the 5 fitted ANN's.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = 0.5\textwidth]{../../src/img/ann_regression_hid_units.pdf}
+  \caption{Text.}
+  \label{fig:gam}
+\end{figure}
+
+\subsection{Model Comparison}
+
+\begin{figure}[h]
+  \begin{minipage}{0.5\textwidth}
+    \paragraph{Linear regression without feature selection:}
+    \begin{itemize}
+    \item Training error: 0.053436522970900534
+    \item Test error:     0.05737122447956839
+    \end{itemize}
+  \end{minipage} \hfill
+  \begin{minipage}{0.5\textwidth}
+    \paragraph{Linear regression with feature selection:}
+    \begin{itemize}
+    \item Training error: 0.16731688100187755
+    \item Test error:     0.1690774799900705
+    \end{itemize}
+  \end{minipage} \vfill
+\end{figure}
+
+
+
+
 
 
 
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%
-\begin{thebibliography}{10}
-\bibitem{datadescription} \url{http://archive.ics.uci.edu/ml/datasets/Abalone}
-\bibitem{gam} \url{https://en.wikipedia.org/wiki/Generalized_additive_model}
-\bibitem{Waugh.thesis} S.~Waugh,''Extending and Benchmark
-  Cascade-Correlation,'' Thesis, 1997.
-\bibitem{Mayukh} H.~Mayukh, ``Age of Abalones using Physical
-  Characteristics: A Classification Problem,'' ECE 539 Fall 2010
-  Project Report, Department of Electrical and Computer Engineering
-  University of Wisconsin-Madison, 2010.
-\end{thebibliography}
+
 \end{document}
