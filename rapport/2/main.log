@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.4)  4 NOV 2016 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.4)  8 NOV 2016 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,313 +549,160 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 27.
 (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../../src/img/all_spam.pdf, id=16, 433.62pt x 289.08pt>
-File: ../../src/img/all_spam.pdf Graphic file (type pdf)
+<../../src/img/make_address.pdf, id=20, 433.62pt x 289.08pt>
+File: ../../src/img/make_address.pdf Graphic file (type pdf)
 
-<use ../../src/img/all_spam.pdf>
-Package pdftex.def Info: ../../src/img/all_spam.pdf used on input line 68.
+<use ../../src/img/make_address.pdf>
+Package pdftex.def Info: ../../src/img/make_address.pdf used on input line 73.
 (pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
 
-<../../src/img/make_spam.pdf, id=17, 433.62pt x 289.08pt>
-File: ../../src/img/make_spam.pdf Graphic file (type pdf)
+<../../src/img/address_all.pdf, id=21, 433.62pt x 289.08pt>
+File: ../../src/img/address_all.pdf Graphic file (type pdf)
 
-<use ../../src/img/make_spam.pdf>
-Package pdftex.def Info: ../../src/img/make_spam.pdf used on input line 72.
+<use ../../src/img/address_all.pdf>
+Package pdftex.def Info: ../../src/img/address_all.pdf used on input line 77.
 (pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
 
-<../../src/img/3d_spam.pdf, id=18, 433.62pt x 289.08pt>
-File: ../../src/img/3d_spam.pdf Graphic file (type pdf)
+<../../src/img/all_3d.pdf, id=22, 433.62pt x 289.08pt>
+File: ../../src/img/all_3d.pdf Graphic file (type pdf)
 
-<use ../../src/img/3d_spam.pdf>
-Package pdftex.def Info: ../../src/img/3d_spam.pdf used on input line 76.
+<use ../../src/img/all_3d.pdf>
+Package pdftex.def Info: ../../src/img/all_3d.pdf used on input line 81.
 (pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
 
-<../../src/img/best_forward_selection.pdf, id=19, 433.62pt x 289.08pt>
+<../../src/img/3d_our.pdf, id=23, 433.62pt x 289.08pt>
+File: ../../src/img/3d_our.pdf Graphic file (type pdf)
+
+<use ../../src/img/3d_our.pdf>
+Package pdftex.def Info: ../../src/img/3d_our.pdf used on input line 85.
+(pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
+
+<../../src/img/our_over.pdf, id=24, 433.62pt x 289.08pt>
+File: ../../src/img/our_over.pdf Graphic file (type pdf)
+
+<use ../../src/img/our_over.pdf>
+Package pdftex.def Info: ../../src/img/our_over.pdf used on input line 89.
+(pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
+
+<../../src/img/over_remove.pdf, id=25, 433.62pt x 289.08pt>
+File: ../../src/img/over_remove.pdf Graphic file (type pdf)
+
+<use ../../src/img/over_remove.pdf>
+Package pdftex.def Info: ../../src/img/over_remove.pdf used on input line 93.
+(pdftex.def)             Requested size: 168.76538pt x 112.51137pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../src/img/make_address
+.pdf> <../../src/img/address_all.pdf
+
+pdfTeX warning: pdflatex (file ../../src/img/address_all.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+> <../../src/img/all_3d.pdf
+
+pdfTeX warning: pdflatex (file ../../src/img/all_3d.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <../../src/img/3d_our.pdf
+
+pdfTeX warning: pdflatex (file ../../src/img/3d_our.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <../../src/img/our_over.pdf
+
+pdfTeX warning: pdflatex (file ../../src/img/our_over.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <../../src/img/over_remove.pdf
+
+pdfTeX warning: pdflatex (file ../../src/img/over_remove.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>] <../../src/img/best_forward_selection.pdf, id=156, 433.62pt x 289.08pt>
 File: ../../src/img/best_forward_selection.pdf Graphic file (type pdf)
 
 <use ../../src/img/best_forward_selection.pdf>
 Package pdftex.def Info: ../../src/img/best_forward_selection.pdf used on input
- line 94.
+ line 112.
+(pdftex.def)             Requested size: 284.11237pt x 189.41714pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 122--139
+[]$[]$  $[]$ 
+ []
+
+
+! Package hypcap Error: You have forgotten to use \caption.
+
+See the hypcap package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \end{figure}
+                  
+\global 
+
+
+! Package hypcap Error: You have forgotten to use \caption.
+
+See the hypcap package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{table}
+                 
+\global 
+
+<../../src/img/residual_error.pdf, id=157, 433.62pt x 289.08pt>
+File: ../../src/img/residual_error.pdf Graphic file (type pdf)
+
+<use ../../src/img/residual_error.pdf>
+Package pdftex.def Info: ../../src/img/residual_error.pdf used on input line 16
+8.
 (pdftex.def)             Requested size: 284.11237pt x 189.41714pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-! LaTeX Error: Environment multicols undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 \begin{multicols}
-                       {2}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Linear regression without feature selection: undefin
-ed.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104 ...ar regression without feature selection:}
-                                                  {enumerate}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105   \item T
-               raining error: 0.16731688100187755
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 105
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106   \item T
-               est error:     0.1690774799900705
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 106
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107   \item $
-               R^2$ train:     0.29925175624581624
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 107
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108   \item $
-               R^2$ test:     0.2907848014802547
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 108
-[][]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{enumerate}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109   \end{enumerate}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Linear regression with feature selection: undefined.
-
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 ...inear regression with feature selection:}
-                                                  {enumerate}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112   \item T
-               raining error: 0.1681589246441137
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 112
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113   \item T
-               est error:     0.1699619894406495
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 113
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114   \item $
-               R^2$ train:     0.2957251509210689
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 114
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115   \item $
-               R^2$ test:     0.28707462348598956
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 115
-[][]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{enumerate}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116   \end{enumerate}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{multicols}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.117 \end{multicols}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<../../src/img/residual_error.pdf, id=20, 433.62pt x 289.08pt>
-File: ../../src/img/residual_error.pdf Graphic file (type pdf)
-
-<use ../../src/img/residual_error.pdf>
-Package pdftex.def Info: ../../src/img/residual_error.pdf used on input line 12
-8.
-(pdftex.def)             Requested size: 284.11237pt x 189.41714pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../src/img/all_spam.pdf
-> <../../src/img/make_spam.pdf
-
-pdfTeX warning: pdflatex (file ../../src/img/make_spam.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
-> <../../src/img/3d_spam.pdf
-
-pdfTeX warning: pdflatex (file ../../src/img/3d_spam.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
- [2 <../../src/img/best_forward_selection.pdf> <../../src/img/residual_error.pd
-f
-
-pdfTeX warning: pdflatex (file ../../src/img/residual_error.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
->]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+[2 <../../src/img/best_forward_selection.pdf>] [3 <../../src/img/residual_error
+.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 49C16EB5BDB1DAF403B4B4D750A10A2F;517.
+(rerunfilecheck)             Checksum: 9D597D4B4356DCD10BA51C54E84EB5DD;657.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 13039 strings out of 493013
- 187061 string characters out of 6139317
- 267936 words of memory out of 5000000
- 16420 multiletter control sequences out of 15000+600000
- 12606 words of font info for 53 fonts, out of 8000000 for 9000
+ 13079 strings out of 493013
+ 187817 string characters out of 6139317
+ 267973 words of memory out of 5000000
+ 16447 multiletter control sequences out of 15000+600000
+ 12914 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,39p,332b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt10.pfb>
-Output written on main.pdf (2 pages, 799735 bytes).
+ 36i,9n,39p,332b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (3 pages, 670176 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
