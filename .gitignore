@@ -1,7 +1,2 @@
 *.zip
 *.pyc
-auto
-*.aux
-*.log
-*.pdf
-*.out
