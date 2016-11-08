@@ -1,5 +1,12 @@
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
 %%%%%%%%%%%%%%%%%%%% Preamble %%%%%%%%%%%%%%%%%%%%
-\documentclass[10pt, paper=a4]{article}
+
+\documentclass[11pt, paper=a4]{article}
+\usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsfonts,amsmath,latexsym,amsthm, mathtools} %mathtext,
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -9,36 +16,43 @@
 \usepackage{cprotect}
 \usepackage[font=footnotesize, labelsep=period]{caption}
 \usepackage{cite}
-\usepackage[scale=0.925]{geometry}
-\graphicspath{{images/}}
+\usepackage[scale=0.8]{geometry}
 \usepackage[pdftex,unicode,colorlinks, citecolor=blue,
-  filecolor=black, linkcolor=blue, urlcolor=blue]{hyperref}
+filecolor=black, linkcolor=blue, urlcolor=blue]{hyperref}
 \usepackage[figure,table]{hypcap}
-%%%%%%%%%%%%%%%%%%%% Document %%%%%%%%%%%%%%%%%%%%
-\begin{document}
-%%%%%%%%%%%%%%%%%%%% Title page %%%%%%%%%%%%%%%%%%%%
-\title{Report 02 --- Regression and classification}
+\usepackage{setspace}
 
-\author{Markus s123692 \& Jonathan s123094}
+\graphicspath{{images/}}
+\onehalfspacing{}
+
+%%%%%%%%%%%%%%%%%%%% Document %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% Title page %%%%%%%%%%%%%%%%%%%%
+
+\title{{Report 2}\\{\bf Regression and Classification}}
+
+\author{Markus Færevaag {\tt s123692} \& Jonathan Becktor {\tt s123094}}
 
 \date{\today}
 
 \maketitle
 
 \begin{abstract}
-In this assignment we will explore Linear regression (LR), linear
-regression with forward selection (FLR), decision trees (DT), k
-nearest neighbors (KNN), naive bayes (NB), artificial neural networks
-(ANN), and multinomial regression (MNMR) methods.
+  In this assignment we will explore Linear regression (LR), linear
+  regression with forward selection (FLR), decision trees (DT), k
+  nearest neighbors (KNN), naive bayes (NB), artificial neural networks
+  (ANN), and multinomial regression (MNMR) methods.
 
 
-%%For regression
-%%problem, we found that the ANN model performs best, and the FLR and
-%% the average age (AVE) models are indistinguishable from each
-%% other. For classification problem, we found the ANN and MNMR to be the
-%% best performing models, and showed them to perform better than the
-%% largest class (LCl) classifier and the linear regression models (LR)
-%% using the paired t-test.
+  %% For regression
+  %% problem, we found that the ANN model performs best, and the FLR and
+  %% the average age (AVE) models are indistinguishable from each
+  %% other. For classification problem, we found the ANN and MNMR to be the
+  %% best performing models, and showed them to perform better than the
+  %% largest class (LCl) classifier and the linear regression models (LR)
+  %% using the paired t-test.
   %% Objective: The objective of this second report is to apply the
   %% methods you have learned in the second section of the course on
   %% ”Supervised learning: Classification and regression” in order to
@@ -100,8 +114,7 @@ linear relationship they can be reduced to a single feature. (see figure1)
     f)\\
     \includegraphics[width = 0.99\textwidth]{../../src/img/over_remove.pdf}
   \end{minipage} \vfill
-    \caption{Green is spam and blue is not.}
-  \label{fig:modelcheck}
+  \caption{\label{fig:modelcheck} Green is spam and blue is not.}
 \end{figure}
 
 From this we can see that the spam and nonspam is hard to distinguish
@@ -145,42 +158,51 @@ computed:
     \item $R^2$ test:     0.2907848014802547
     \end{itemize}
   \end{minipage} \vfill
+  \caption{Comparison of linear regression with and without feature selection}
 \end{figure}
 
 We can tell that without feature selection we get a smaller
 error. Which leads us to believe that Linear Regression will not give
 a great estimation of what is spam and what is not.
 
-\subsection{Data predicitons}
-The fitted data has now creatd a model that can be used to fit the
+\subsection{Data predictions}
+The fitted data has now created a model that can be used to fit the
 email to spam or not.  The following vector are the coeficcients of
 the trained model. These are the importance of each feature which in
 turn helps us estimate if an email is spam or not.
+
 \begin{table}[h]
-\centering
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
-\hline Attribute & make & all & our & over & remove & internet & order
-& mail & receive & will \\ \hline Coefficient & 0.490 & 0.685 & 1.158
-& 1.631 & 2.510 & 2.079 & 1.237 & 0.958 & 0.660 & -0.279 \\ \hline
-\end{tabular}
+  \centering
+  \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+    \hline Attribute & make & all & our & over & remove & internet & order
+    & mail & receive & will \\ \hline Coefficient & 0.490 & 0.685 & 1.158
+                                        & 1.631 & 2.510 & 2.079 & 1.237 & 0.958 & 0.660 & -0.279 \\ \hline
+  \end{tabular}
+  \caption{Training model coefficients}
 \end{table}
 
-Below(figure3) the residual error for the different fearures can
+Below, in figure~\ref{fig:residual-error} the residual error for the different fearures can
 be seen. From these we can conclued that something causes something
 but they do not show any distinct patterns.
-
-
 
 \begin{figure}[h]
   \centering
   \includegraphics[width = 0.5\textwidth]{../../src/img/residual_error.pdf}
-  \caption{Text.}
-  \label{fig:gam}
+  \caption{\label{fig:residual-error} Residual error}
 \end{figure}
 
 
+\clearpage
+\section{Classification}
+
+\subsection{Problem}
+We have chosen to solve the classification using Decision Trees,
+K-Nearest Neighbors and Naive Bayes, all using K-Fold cross
+validation.
+
 
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%
+\clearpage
 \begin{thebibliography}{10}
 \bibitem{datadescription} \url{http://archive.ics.uci.edu/ml/datasets/Abalone}
 \bibitem{gam} \url{https://en.wikipedia.org/wiki/Generalized_additive_model}
